@@ -84,6 +84,10 @@ class _StatefulWidgetExampleState extends State<StatefulWidgetExample> {
                   FloatingActionButton(
                     onPressed: _counter > 0 ? decrementCounter : null,
                     tooltip: 'Diminuisci',
+                    backgroundColor: _counter > 0
+                        ? null
+                        : const Color.fromARGB(255, 202, 202, 202),
+                    foregroundColor: _counter > 0 ? null : Colors.white,
                     child: const Icon(Icons.remove),
                   ),
                   const SizedBox(width: 25),
@@ -94,8 +98,12 @@ class _StatefulWidgetExampleState extends State<StatefulWidgetExample> {
                   ),
                   const SizedBox(width: 25),
                   FloatingActionButton(
-                    onPressed: resetCounter,
+                    onPressed: _counter > 0 ? resetCounter : null,
                     tooltip: 'Azzera',
+                    backgroundColor: _counter > 0
+                        ? null
+                        : const Color.fromARGB(255, 202, 202, 202),
+                    foregroundColor: _counter > 0 ? null : Colors.white,
                     child: const Icon(Icons.clear_sharp),
                   ),
                 ],

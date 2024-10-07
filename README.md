@@ -1,8 +1,4 @@
-# ex_one_corso_flutter
-
-A new Flutter project.
-
-## Getting Started
+## Esercizio 1 - Corso Flutter
 
 Crea un’app che utilizzi:
 1) Un widget Stateful personalizzato chiamato StatefulWidgetExample.
